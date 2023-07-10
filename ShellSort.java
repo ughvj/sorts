@@ -6,8 +6,9 @@ public class ShellSort extends Sortable {
             for (int i = h; i < n; i++) {
                 int j;
                 int tmp = data[i];
-                count();
+                
                 for (j = i - h; j >= 0 && data[j] > tmp; j -= h) {
+                    count();
                     data[j + h] = data[j];
                 }
                 data[j + h] = tmp;

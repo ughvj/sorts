@@ -24,6 +24,10 @@ public class Sortable {
         return this.comparing_count;
     }
 
+    public void clearCount() {
+        this.comparing_count = 0;
+    }
+
     public String getName() {
         return "This is super class.";
     }
